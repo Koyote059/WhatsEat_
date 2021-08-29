@@ -45,7 +45,7 @@ public class Meal {
         Set<String> tags = new HashSet<>();
         for(MealIngredient mealIngredient: ingredients){
             Ingredient ingredient = mealIngredient.getIngredient();
-            tags.addAll(ingredient.getTags());
+            tags.addAll(ingredient.getTags()); //TODO -> Questo codice può essere messo nel costruttore
         }
         return tags;
     }
